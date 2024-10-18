@@ -1,0 +1,269 @@
+
+* {
+  font-family: 'PT Sans', sans-serif;
+}
+
+body {
+  background-color: rgb(210, 210, 210);
+}
+
+.container-profile{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 150px;
+  margin-top: 120px;
+  margin-right: 150px;
+  width: calc(100% - 300px);
+  background-color: rgb(210, 210, 210);
+}
+
+.container-profile .first-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.container-profile .first-line h1 {
+  flex-grow: 1;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container-profile .first-line i {
+  color: black;
+  margin-right: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.container-profile .first-line i:hover,
+.container-profile .first-line i.active {
+    background-color:rgb(163, 0, 0);
+    color: white;
+}
+
+.container-profile .box-profile {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 70px;
+  margin-bottom: 80px;
+}
+
+.container-profile .box-profile .left-profile {
+  display: flex;
+}
+
+.container-profile .box-profile .profile-field .city-field{
+  display: flex;
+  align-items: center;
+}
+
+.container-profile .box-profile .profile-field .city-field i {
+  color: rgb(182, 0, 0);
+  margin-right: 8px;
+}
+
+.container-profile .box-profile .profile-field .city-field h4 {
+  margin-right: 5px;
+}
+
+.container-profile .box-profile .profile-field .bio-field{
+  display: flex;
+  align-items: flex-start;
+  width: 500px;
+  height: 100px;
+}
+
+.container-profile .box-profile .right-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.first h1 {
+  font-size: 20px;
+}
+
+.img_profile {
+  width: 200px;
+  height: auto;
+}
+
+.profile-field{
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.profile-field h1, .box h2 {
+  margin-top: 0;     
+  margin-bottom: 0;   
+  line-height: 1.2;    
+}
+
+.profile-field h1{
+  margin-bottom: 20px;
+}
+
+.profile-field h2 {
+  font-size: 20px;
+}
+
+.container-profile .box-profile .right-profile button {
+  margin-left: auto;
+  height: 45px;
+  background-color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border: 2px solid rgba(0, 0, 0, .2);
+  color: black;
+  font-weight: 600;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container-profile .box-profile .right-profile button i {
+  margin-right: 7px;
+}
+.container-profile .box-profile .right-profile button:hover,
+.container-profile .box-profile .right-profile button.active {
+    background-color:rgb(229, 229, 229);
+}
+
+
+
+.container-products {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 150px;
+  margin-top: 120px;
+  margin-right: 150px;
+  width: calc(100% - 300px);
+  background-color: rgb(210, 210, 210);
+}
+
+.container-products h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.box-profile-products {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 70px;
+  margin-bottom: 80px;
+}
+
+
+@media (max-width: 1210px) {
+  .container-profile, .container-products {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: calc(100% - 40px);
+  }
+
+  .container-profile .box-profile, .container-products .box-profile-products {
+    flex-direction: column;
+    padding: 20px;
+}
+}
+
+@media (max-width: 768px) {
+  .container-profile .first-line h1 {
+    flex-grow: 0;
+    margin-bottom: 30px;
+  }
+
+  .container-profile, .container-products {
+      margin-left: 20px;
+      margin-right: 20px;
+      width: calc(100% - 40px);
+  }
+
+  .container-profile .box-profile, .container-products .box-profile-products {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .container-profile .box-profile .profile-field .bio-field,
+  .container-profile .box-profile .left-profile {
+      flex-direction: column;
+  }
+
+  .container-products .box-profile-products button {
+      width: 100%;
+      text-align: center;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .container-profile .first-line h1,
+  .container-products h1 {
+      font-size: 30px;
+      margin: 20px 0;
+  }
+
+  .container-profile .box-profile {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+  }
+
+  .container-profile .box-profile .left-profile .profile-field{
+    align-items: center;
+    margin: 0;
+  }
+
+  .bio-field {
+    margin-bottom: 70px;
+  }
+
+  .profile-field h1{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 30px;
+  }
+
+  .container-profile .box-profile .left-profile{
+      width: 100%; 
+  }
+
+  .container-profile .box-profile .profile-field .bio-field {
+      width: 100%; 
+  }
+
+  .container-profile .box-profile .right-profile button i {
+      margin: 0;
+  }
+
+  .img_profile {
+      width: 100%;
+      max-width: 200px; 
+  }
+
+  .profile-field h2 {
+      font-size: 18px;
+  }
+}

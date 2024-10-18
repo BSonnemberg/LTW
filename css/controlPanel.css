@@ -1,0 +1,86 @@
+body {
+  background-color: rgb(210, 210, 210);
+}
+
+.container-controlPanel {
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+  margin-left: 460px;
+  margin-right: 460px;
+  width: calc(100% - 920px);
+  padding-left: 50px;
+}
+
+.container-controlPanel h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container-controlPanel .box-controlPanel{
+  padding: 20px;
+  background-color: white;
+  margin-bottom: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.container-controlPanel .box-controlPanel h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.container-controlPanel .box-controlPanel form {
+  display: flex;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.container-controlPanel .box-controlPanel form label{
+  font-weight: 600;
+  flex: 0 0 70px;
+  width: 60px;
+}
+
+.container-controlPanel .box-controlPanel form input[type="text"] {
+  width: 200px;
+  margin-left: 50px;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid #ccc; 
+}
+
+.container-controlPanel .box-controlPanel form input[type="submit"] {
+  margin-left: auto;  
+  padding: 12px;      
+  cursor: pointer; 
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .container-controlPanel {
+    margin-left: 20%;
+    margin-right: 20%;
+    width: calc(100% - 40%);
+  }
+  
+}
+
+@media (max-width: 990px) {
+  .container-controlPanel {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: calc(100% - 20%);
+  }
+}
+
+@media (max-width: 800px) {
+  .container-controlPanel {
+    width: 100%;
+  }
+}
+
+
+

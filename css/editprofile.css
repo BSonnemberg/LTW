@@ -1,0 +1,155 @@
+* {
+  font-family: 'PT Sans', sans-serif;
+}
+
+body {
+  background-color: rgb(210, 210, 210);
+}
+
+.container-edit {
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+  margin-left: 400px;
+  margin-right: 400px;
+  width: calc(100% - 800px);
+
+}
+
+.container-edit h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container-edit h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.container-edit .box-inputs{
+  padding: 20px;
+  background-color: white;
+  margin-bottom: 50px;
+}
+
+.container-edit .box-inputs .input-field {
+  display: flex;
+  align-items: center;
+}
+
+.container-edit .box-inputs .input-field label {
+  flex: 0 0 100px;
+  width: 60px;
+  font-weight: 600;
+}
+
+.container-edit .box-inputs .input-field input {
+  width: 200px;
+  margin-left: 50px;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid #ccc; 
+  margin-bottom: 16px;
+  margin-top: 6px;
+}
+
+.container-edit .box-inputs .input-field textarea {
+  width: 500px;
+  margin-left: 50px;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid #ccc; 
+  margin-bottom: 16px;
+  margin-top: 6px;
+  height: 120px;
+}
+
+.saveEdit {
+  margin-left: auto;
+  height: 45px;
+  background-color: black;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border: 2px solid rgba(0, 0, 0, .2);
+  color: white;
+  font-weight: 600;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+  .container-edit {
+    margin-left: 30%;
+    margin-right: 30%;
+    width: calc(100% - 60%);
+  }
+  
+}
+
+@media (max-width: 990px) {
+  .container-edit {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: calc(100% - 50%);
+  }
+}
+
+@media (max-width: 800px) {
+  .container-edit {
+    margin-left: 20%;
+    margin-right: 20%;
+    width: calc(100% - 40%);
+  }
+}
+
+@media (max-width: 670px) {
+  .container-edit {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: calc(100% - 20%);
+  }
+}
+
+@media (max-width: 530px) {
+  .container-edit {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100% - 20px);
+  }
+
+  .container-edit .box-inputs .input-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-edit .box-inputs .input-field label{
+    flex: 0 0 0;
+    font-weight: 600;
+  }
+
+  .container-edit .box-inputs .input-field input {
+    width: 200px;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; 
+    margin-left: 0;
+    margin-bottom: 40px;
+    margin-top: 6px;
+  }
+
+  .container-edit .box-inputs .input-field textarea {
+    width: 300px;
+    margin-left: 0;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; 
+    margin-bottom: 16px;
+    margin-top: 10px;
+    height: 60px;
+  }
+}
+
